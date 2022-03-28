@@ -9,7 +9,7 @@ const userFeelings = document.getElementById('content');
 let d = new Date();
 let newDate = d.getMonth() + 1 + '.' + d.getDate() + '.' + d.getFullYear();
 
-const baseUrl = "http://api.openweathermap.org/data/2.5/weather?zip={zip code}&appid={API key}&units=metric";//adding units = metrics to url to geting temp in celsuis
+const baseUrl = "https://api.openweathermap.org/data/2.5/weather?zip={zip code}&appid={API key}&units=metric";//adding units = metrics to url to geting temp in celsuis
 const apiCredentials = 'ec9c17258012fa692b4be48ff4767e08';   //getting the api from openweather website
 
 const postTemperature = async function (url = '', data = {}) {  //posting data to the server
